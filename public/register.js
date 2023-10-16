@@ -27,12 +27,12 @@ registerForm.addEventListener('submit', (e) => {
         return;
     }
 
-    if (email.endsWith('@vpt.edu.in') == false) {
-        formError.classList.add('display');
-        formError.textContent = "Please enter a valid college email";
-        resetRegisterButton();
-        return;
-    }
+    // if (email.endsWith('@vpt.edu.in') == false) {
+    //     formError.classList.add('display');
+    //     formError.textContent = "Please enter a valid college email";
+    //     resetRegisterButton();
+    //     return;
+    // }
 
     fetch('/api/user/signup', {
         method: 'POST',
