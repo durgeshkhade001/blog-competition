@@ -1,1 +1,1 @@
-# blog-competition
+blog competition app
