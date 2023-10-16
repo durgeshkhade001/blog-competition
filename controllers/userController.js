@@ -48,9 +48,9 @@ function login(req, res) {
     User.findOne({ rollno: rollno })
         .then((user) => {
             if (user) {
-                if (user.verified === false) {
-                    return res.status(401).json({ error: {message: "Please verify your email first" }});
-                }
+                // if (user.verified === false) {
+                //     return res.status(401).json({ error: {message: "Please verify your email first" }});
+                // }
                 user.comparePassword(password, (err, isMatch) => {
                     if (err) throw err;
                     if (isMatch) {
