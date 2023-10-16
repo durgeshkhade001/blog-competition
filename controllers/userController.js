@@ -168,7 +168,7 @@ function sendVerificationEmail(req, res) {
 }
 
 function getUserCount(req, res) {
-    User.countDocuments({ verified: true })
+    User.countDocuments({ })
         .then((count) => {
             res.status(200).json({ count: count });
         })
