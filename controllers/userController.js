@@ -121,8 +121,8 @@ function sendVerificationEmailCore(userId, res) {
             const mailOfUser = user.email;
             const emailContent = `
                 <h1>Verify your email address</h1>
-                <p>Click <a href="http://localhost:3000/api/user/verify/${code}">here</a> to verify your email address</p>
-                <p>Or copy this link: http://localhost:3000/api/user/verify/${code}</p>
+                <p>Click <a href="http://vpblogs.cyclic.app/api/user/verify/${code}">here</a> to verify your email address</p>
+                <p>Or copy this link: http://vpblogs.cyclic.app/api/user/verify/${code}</p>
             `;
 
             const transporter = nodemailer.createTransport({
