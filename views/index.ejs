@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShala Blog Competition</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="maxwidthlimiter">
+        <nav>
+            <img src="/assets/tslogo.png" alt="">
+            <div class="links">
+                <a href="index" class="active">Home</a>
+                <span class="link-divider">/</span>
+                <a href="register" class="" id="register">Register</a>
+                <a href="dashboard" class="" id="dashboard">Dashboard</a>
+                <span class="link-divider">/</span>
+                <a href="login" class="" id="login">Login</a>
+                <a href="#" class="" onclick="logout()" id="logout">Logout</a>
+            </div>
+            <img src="/assets/vplogo.jpg" alt="">
+        </nav>
+
+        <div id="main">
+            <div id="hero">
+                <div id="competition-details">
+                    <div class="wrapper">
+                        <h3>Total Participants: <span class="count" id="participants-counter">54</span></h3>
+                        <h3>Blog Submissions: <span class="count" id="submissions-counter">0</span></h3>
+                    </div>
+                </div>
+                <div id="winners">
+                    <div class="wrapper">
+                        <h3>🏆 Winner: <span class="l">(drum-rolls)</span></h3>
+                        <h3>🥇 1st Runner-up: <span class="l">(drum-rolls)</span></h3>
+                        <h3>🥈 2nd Runner-up: <span class="l">(drum-rolls)</span></h3>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div id="winning-blogs">
+                <div class="blog-card first">
+                    <img src="/assets/unknownblog.png" alt="">
+                    <span class="win-pos">🏆 Winner</span>
+                    <h3></h3>
+                </div>
+                <div class="blog-card second">
+                    <img src="/assets/unknownblog.png" alt="">
+                    <span class="win-pos">🥇 1st Runner-up</span>
+                    <h3></h3>
+                </div>
+                <div class="blog-card third">
+                    <img src="/assets/unknownblog.png" alt="">
+                    <span class="win-pos">🥈 2nd Runner-up</span>
+                    <h3></h3>
+                </div>
+            </div>
+            <div id="blog-filters">
+                <h2>Explore All Blogs:</h2>
+                <div>
+                    <label for="category">Category:</label>
+                    <select name="category" id="" onchange="showBlogsWithCategory(this.value)">
+                        <option value="All">All</option>
+                        <option value="Blockchain">Blockchain</option>
+                        <option value="Web Technologies">Web technologies</option>
+                        <option value="Cybersecurity">Cybersecurity</option>
+                        <option value="Artificial Intelligence">Artificial Intelligence</option>
+                        <option value="Internet of Things">Internet of Things</option>
+                        <option value="Cloud Computing">Cloud Computing</option>
+                        <option value="Quantum Computing">Quantum Computing</option>
+                        <option value="Augmented Reality">Augmented Reality</option>
+                    </select>
+                </div>
+            </div>
+            
+            <h2 id="no-blogs" class="hidden">No Blog Found</h2>
+            <div id="blogs">
+            </div>
+        </div>
+    </div>
+    
+</body>
+<footer>
+    <script src="index.js"></script>
+</footer>
+</html>

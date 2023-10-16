@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShala Blog Competition | Login</title>
+    <link rel="stylesheet" href="newblog.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+</head>
+<body>
+    <div id="maxwidthlimiter">
+        <nav>
+            <img src="/assets/tslogo.png" alt="">
+            <div class="links">
+                <a href="index" class="">Home</a>
+                <span class="link-divider">/</span>
+                <a href="/dashboard" class="">Dashboard</a>
+                <span class="link-divider">/</span>
+                <a href="#" class="" onclick="logout()">Logout</a>
+            </div>
+            <img src="/assets/vplogo.jpg" alt="">
+        </nav>
+
+        <div id="main">
+            <h1 id="title" class="contenteditable-border" contenteditable="true">Your title here...</h1>
+            <h2 id="subtitle" class="contenteditable-border" contenteditable="true">Your subtitle here...</h2>
+            <!-- <div id="authorncatwrapper">
+                <span id="category">Your Category</span>
+                <span id="author">Author: <name>Durgesh Khade</name> from <class>CO5IA</class></span>
+            </div> -->
+            <span>
+                <br>
+                <select name="category" id="select-category">
+                    <option value="">Select Category</option>
+                    <option value="Blockchain">Blockchain</option>
+                    <option value="Web Technologies">Web technologies</option>
+                    <option value="Cybersecurity">Cybersecurity</option>
+                    <option value="Artificial Intelligence">Artificial Intelligence</option>
+                    <option value="Internet of Things">Internet of Things</option>
+                    <option value="Cloud Computing">Cloud Computing</option>
+                    <option value="Quantum Computing">Quantum Computing</option>
+                    <option value="Augmented Reality">Augmented Reality</option>
+                </select> &nbsp;&nbsp;&nbsp;
+                <span>
+                    <label for="image">Thumbnail:</label>
+                    <input type="file" name="image" id="uploadthumbnail" onchange="uploadFile(event)">
+                </span>
+            </span>
+            <img src="/assets/unknownblog.png" id="thumbnail" alt="">
+            <div id="settings">
+                <h3>Guidelines For Content Formatting: </h3>
+                <p>For Bold: **text**</p>
+                <p>For Italic: *text*</p>
+                <p>For Code Block: &&codeinside&&</p>
+                <p>For Image: [url]</p>
+                <p>For H2: ##text##</p>
+                <p>For H3: ###text###</p>
+            </div>
+            <div id="content" class="contenteditable-border" contenteditable="true">
+                <div>
+                    Start Writing your content here...<br><br>
+
+                    Sample:<br><br>
+
+                    ## Topic 1 ##<br><br>
+
+                    ### Subtopic 1 ###<br><br>
+
+                    Content content content content content content content content content content content content *content* content content content content content content content content content content content content content content content content content <br><br>
+
+                    ### Subtopic 2 ###<br><br>
+
+                    Content content content content content content content content content content content content *content* content content content content content content content content content content content content content content content content content <br><br>
+
+                    ## Topic 2 ##<br><br>
+
+                    Content content content content content content content content content content content content content content content content content content content content content content content content **content** content content content content content <br><br>
+
+                    ## Topic 3 ##<br><br>
+
+                    Content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content <br><br>
+
+                    [yourimageurl.png]<br><br>
+
+                    Content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content <br><br>
+
+                    && <br>
+                    const userName = prompt('Enter your name:');<br>
+                    if (userName) {<br>
+                    alert(`Hello, ${userName}! Welcome to our website.`);<br>
+                    } else {<br>
+                    alert('Hello! Welcome to our website.');<br>
+                    }<br>
+                    &&<br><br>
+
+                    Content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content and so on....<br><br>
+                </div>
+            </div>
+            <div id="conclusion">
+                <h3>Conclusion:</h3>
+                <p class="contenteditable-border" contenteditable="true">Your conclusion here...</p>
+            </div>
+            <div id="tags">Tags:
+                <tag class="contenteditable-border" contenteditable="true">Tag 1</tag>
+                <tag class="contenteditable-border" contenteditable="true">Tag 2</tag>
+                <tag class="contenteditable-border" contenteditable="true">Tag 3</tag>
+            </div>
+            <div id="submission">
+                <button onclick="saveanpreviewblog(true)" class="preview">Preview &nbsp;<i class="fa-solid fa-eye"></i></button>
+                <button onclick="publishblog()" class="publish">Publish &nbsp;<i class="fa-solid fa-paper-plane-top"></i></button>
+            </div>
+        </div>
+            
+    </div>
+    
+</body>
+<footer>
+    <script src="newblog.js"></script>
+</footer>
+</html>

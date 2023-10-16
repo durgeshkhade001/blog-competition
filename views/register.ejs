@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShala Blog Competition | Register</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+</head>
+<body>
+    <div id="maxwidthlimiter">
+        <nav>
+            <img src="/assets/tslogo.png" alt="">
+            <div class="links">
+                <a href="index" class="">Home</a>
+                <span class="link-divider">/</span>
+                <a href="register" class="active">Register</a>
+                <span class="link-divider">/</span>
+                <a href="login" class="">Login</a>
+            </div>
+            <img src="/assets/vplogo.jpg" alt="">
+        </nav>
+
+        <div id="main">
+            <form action="" method="post" id="register-form">
+                <p id="form-error" class=""><i class="fa-solid fa-circle-info"></i>&nbsp; <span class="msg">Default error message</span></p>
+                <label for="rollno">Roll Number:</label>
+                <input type="text" name="rollno" id="rollno" placeholder="Enter your roll number" required>
+                <label for="email">College Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your college email" required>
+                <label for="first-name">First Name:</label>
+                <input type="text" name="first-name" id="first-name" placeholder="Enter your first name" required>
+                <label for="last-name">Last Name:</label>
+                <input type="text" name="last-name" id="last-name" placeholder="Enter your last name" required>
+                <div class="select-merger">
+                    <label for="branch">Branch:</label>
+                    <select name="branch" id="branch" required>
+                        <option value="CO">CO</option>
+                        <option value="IF">IF</option>
+                        <option value="EX">EX</option>
+                    </select>
+                </div>
+                <div class="select-merger">
+                    <label for="year">Year:</label>
+                    <select name="year" id="year" required>
+                        <option value="1">FY</option>
+                        <option value="2">SY</option>
+                    </select>
+                </div>
+                <div class="select-merger">
+                    <label for="division">Division:</label>
+                    <select name="division" id="division" required>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                </div>
+                <label for="password" class="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                <button type="submit">Register 🎫</button>
+            </form>
+        </div>
+            
+    </div>
+    
+</body>
+<footer>
+    <script src="register.js"></script>
+</footer>
+</html>

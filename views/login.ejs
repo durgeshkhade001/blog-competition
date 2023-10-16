@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShala Blog Competition | Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+</head>
+<body>
+    <div id="maxwidthlimiter">
+        <nav>
+            <img src="/assets/tslogo.png" alt="">
+            <div class="links">
+                <a href="index" class="">Home</a>
+                <span class="link-divider">/</span>
+                <a href="register" class="">Register</a>
+                <span class="link-divider">/</span>
+                <a href="login" class="active">Login</a>
+            </div>
+            <img src="/assets/vplogo.jpg" alt="">
+        </nav>
+
+        <div id="main">
+            <form action="" method="post" id="login-form">
+                <p id="form-error" class=""><i class="fa-solid fa-circle-info"></i>&nbsp; <span class="msg">Default error message</span></p>
+                <label for="rollno">Username:</label>
+                <input type="text" name="rollno" id="rollno" placeholder="Enter your rollno" required>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                <div id="keep-me-signed-in">
+                    <input type="checkbox" name="keep-me-signed-in">
+                    <label for="keep-me-signed-in">Keep me signed in</label>
+                </div>
+                <input type="submit" value="Login" class="button">
+                <span id="forgot-password" onclick="contacttoresetpass()">Forgot password?</span>
+            </form>
+        </div>
+            
+    </div>
+    
+</body>
+<footer>
+    <script src="login.js"></script>
+</footer>
+</html>

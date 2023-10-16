@@ -1,0 +1,177 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    opacity: 0;
+}
+
+#maxwidthlimiter {
+    max-width: 1240px;
+    margin: 0 auto;
+    border: 1px solid #e3e3e377;
+    border-bottom: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #e3e3e377;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+nav a.active {
+    color: rgb(7, 202, 7);
+    font-weight: 400;
+}
+
+nav span.link-divider {
+    margin: 0 15px;
+    font-size: 20px;
+    color: #000;
+    font-weight: 300;
+}
+
+nav img {
+    width: 60px;
+    height: 60px;
+}
+
+
+#main {
+    padding: 20px;
+}
+
+#welcome-msg {
+    float: right;
+    font-weight: 300;
+}
+
+#welcome-msg name {
+    font-weight: 400;
+}
+
+#my-blogs h3 {
+    font-weight: 400;
+    margin-right: 20px;
+}
+
+button#new-blog {
+    background-color: rgb(0, 134, 0);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+button#new-blog:hover {
+    background-color: rgb(0, 134, 0, 0.8);
+}
+
+#my-blogs .titlesection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+span#no-blogs-error {
+    font-weight: 300;
+    font-size: 20px;
+    color: rgba(255, 0, 0, 0.8);
+    display: none;
+}
+
+span#no-blogs-error.display {
+    display: block;
+}
+
+#blogs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blog-card {
+    width: 30%;
+    margin-bottom: 20px;
+    border: 1px solid #e3e3e377;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.blog-card img {
+    width: 100%;
+    aspect-ratio: 16/9.888;
+    object-fit: cover;
+}
+
+.blog-card .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.blog-card .buttons button {
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 300;
+    margin-right: 10px;
+}
+
+.blog-card .buttons button.publish {
+    background-color: white;
+    color: rgb(0, 134, 0);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.blog-card .buttons a {
+    text-decoration: none;
+}
+
+.review-status {
+    cursor: default;
+}
+
+.review-status .review {
+    cursor: default;
+}
+
+.under-review button {
+    background-color: orange;
+}
+
+.done-review button {
+    background-color: rgb(0, 134, 0);
+}
+
+.review-status.hidden button {
+    display: none;
+}
+
+.rejected-review button {
+    background-color: red;
+}

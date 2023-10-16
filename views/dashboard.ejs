@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShala Blog Competition | Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+</head>
+<body>
+    <div id="maxwidthlimiter">
+        <nav>
+            <img src="/assets/tslogo.png" alt="">
+            <div class="links">
+                <a href="index" class="">Home</a>
+                <span class="link-divider">/</span>
+                <a href="/dashboard" class="active">Dashboard</a>
+                <span class="link-divider">/</span>
+                <a href="#" class="" onclick="logout()">Logout</a>
+            </div>
+            <img src="/assets/vplogo.jpg" alt="">
+        </nav>
+
+        <div id="main">
+            <h3 id="welcome-msg">Welcome, <name></name></h3>
+            <div id="my-blogs">
+                <div class="titlesection">
+                    <h3>My Blogs (Max 5)</h3>
+                    <button id="new-blog" onclick="newBlog()"><i class="fa-solid fa-plus"></i> New Blog</button>
+                </div>
+
+                <span id="no-blogs-error" class=""><i class="fa-light fa-circle-exclamation"></i>&nbsp; No Blogs To Show</span>
+                <div id="blogs">
+                    
+                </div>
+            </div>
+        </div>
+            
+    </div>
+    
+</body>
+<footer>
+    <script src="dashboard.js"></script>
+</footer>
+</html>
