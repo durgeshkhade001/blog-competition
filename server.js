@@ -89,8 +89,8 @@ app.get('/review123123', (req, res) => {
 
 
 // Connect to MongoDB & start the server
-const port = process.env.PORT || 3000;
-const mongoUri = process.env.MONGO_URI;
+const port = 3000;
+const mongoUri = 'mongodb+srv://durgesh:Abcd%40123123@atlascluster.8blie8z.mongodb.net/blogcompetition';
 process.stdout.write('\x1Bc');
 console.log('Connecting to MongoDB...');
 mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true })
